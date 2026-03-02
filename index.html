@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    font-family: Roboto, sans-serif; 
+    line-height: 1.5; padding: 20px; background-color: #f4f4f9;
+  }
+
+  h1, p {
+    margin: auto;
+    max-width: 600px;
+  }
+
+  form {
+    max-width: 600px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px 3px rgb(224, 221, 221);
+  }
+
+  fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+
+  legend {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #333;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+
+  input[type="text"], input[type="email"], input[type="password"], input[type=tel], input[type=date], select, textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  button {
+     margin-top: 1rem;
+            width: 100%;
+            padding: 5px;
+            background-color: rgb(21, 183, 21);
+            border: none;
+            border-radius: 4px;
+            color: white;
+  }
+
+  button:hover {
+    background-color: rgb(10, 247, 10);
+    transition-delay: 0.1s;
+  }
+
+  
+</style>
+  </head>
+  <body>
+    <main>
+      <h1>Students Admission Form</h1>
+      <p>Please fill out the form below to register the upcoming semester</p>
+      <form action="">
+        <fieldset>
+          <legend>Personal information</legend>
+          <label for="full-name"> <h4>Full name</h4>
+            </label>
+            <input id="name" name="name" type="text" placeholder="e.g John Doe" style="width: 100%" />
+          
+            <label for="email-addr"> <h4> Email address</h4>
+            </label>
+          
+            <input id="email" name="email" type="text" placeholder="John@example" style="width: 100%" />
+
+            <label for="user-pass"> <h4>Password</h4>
+            </label>
+            <input type="password" style="width: 100%" required />
+
+            <label for="phone"> <h4> Phone Number</h4>
+            </label>
+            <input
+            id="phone"
+            name="phone"
+              type="tel"
+              placeholder="123-456-7890"
+              style="width: 100%"
+            />
+
+            <label for="D.O.B"> <h4>Date of Birth</h4>
+            </label>
+            <input id="D.O.B" name="student_dob" type="date" style="width: 100%" />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Academic preferences</legend>
+
+           <label for=""> <h4> Gender</h4>
+            </label>
+            <input id="male" type="radio" value="male" name="gender"/>Male <input id="id" type="radio" name="gender" value="female"/>female
+            <input id="other" type="radio" name="gender" value="other"/>other
+
+          <h4>
+            Desired Course
+            <br />
+            <select name="" id="" style="width: 100%">
+              <option value="" selected>--Please choose a course--</option>
+              <option value="Back-end Engineer">Back-end Engineer</option>
+              <option value="front-end Engineer">front-end Engineer</option>
+              <option value="mobile app developer">mobile app developer</option>
+              <option value="Cybersecurity engineer">
+                Cybersecurity engineer
+              </option>
+            </select>
+          </h4>
+          <h4>
+            Campus Facilties Needed
+            <br />
+            <input type="checkbox" />Hostel Accommodation
+            <input type="checkbox" />24/7 Library Access
+          </h4>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Details</legend>
+          <h4>Why do you want to join the campus?</h4>
+
+          <textarea
+            name=""
+            id=""
+            style="width: 95%; padding: 1rem"
+            placeholder="Tell us about your goals..."
+          ></textarea>
+        </fieldset>
+
+        <button
+          type="submit"
+        >
+          Submit application
+        </button>
+      </form>
+    </main>
+  </body>
+</html>
